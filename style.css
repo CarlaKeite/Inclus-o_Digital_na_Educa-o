@@ -1,0 +1,179 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section p {
+    margin-bottom: 25px; /* cria espaço entre os tópicos */
+}
+
+section h2 {
+    margin-bottom: 30px; /* espaço abaixo do título */
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.hero video {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.hero .credit {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Features section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.features div {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.features img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Forms */
+/* Forms */
+form {
+    max-width: 250px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+    display: flex;          /* ativa flexbox */
+    flex-direction: column; /* organiza verticalmente */
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Botão alinhado à direita */
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+
+    align-self: flex-end;   /* ✅ joga o botão para direita */
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero video {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
